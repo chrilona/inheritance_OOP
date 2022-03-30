@@ -1,7 +1,8 @@
 fun main(){
 var car =Car("Toyota","corolla","blue",5)
     var bus = Bus("Isuzu","latest","Yellow",52)
-    car.carry(7)
+    car.carry(5)
+    car.carry(8)
     car.identity()
     car.calculateParkingFees(2)
     println(bus.maxTripFare(200.00))
@@ -12,7 +13,7 @@ open class Car(var make:String,var model:String,var color:String,var capacity:In
     fun carry(people:Int){
         var x = people - capacity
      if (people <= capacity){
-         println("carrying $capacity passengers")
+         println("carrying $people passengers")
      }
         else{
             println("overcapacity by $x people")
